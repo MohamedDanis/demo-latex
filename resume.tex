@@ -1,0 +1,390 @@
+
+
+\documentclass[a4,10pt]{article}
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+ \usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{tabularx}
+\hypersetup{colorlinks=true,urlcolor=black}
+\usepackage[11pt]{moresize}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage[inline]{enumitem}
+\usepackage{array}
+\usepackage{xcolor}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{anyfontsize}
+
+%%%% Set Margins
+\usepackage[margin=1cm, top=1cm]{geometry}
+
+%%%% Set Fonts
+\setmainfont[
+BoldFont=SourceSansPro-Semibold.otf, %SourceSansPro-Bold.otf
+ItalicFont=SourceSansPro-RegularIt.otf
+]{SourceSansPro-Regular.otf}
+\setsansfont{SourceSansPro-Semibold.otf}
+
+%%%% Set Page
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%%% Set URL Style
+\urlstyle{same}
+
+%%%% Set Indentation
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%%%% Set Secondary Color
+\definecolor{UI_blue}{RGB}{32, 64, 151}
+
+%%%% Define New Commands
+\usepackage[style=nature, maxbibnames=3]{biblatex}
+\addbibresource{Publications.bib}
+
+%%%% Bold Name in Publications
+\renewcommand*{\mkbibnamegiven}[1]{%
+\ifitemannotation{highlight}
+{\textbf{#1}}
+{#1}}
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+\ifitemannotation{highlight}
+{\textbf{#1}}
+{#1}}
+
+%%%% Set Sections formatting
+\titleformat{\section}{
+\color{UI_blue} \scshape \raggedright \large 
+}{}{0em}{}[\vspace{-10pt} \hrulefill \vspace{-6pt}]
+
+%%%% Set Subtext Formatting
+\newcommand{\subtext}[1]{
+#1\par\vspace{-0.2cm}}
+
+% \newcommand{\subtextit}[1]{\vspace{0.15cm}
+% \textit{ #1 \vspace{-0.2cm}} }
+
+%%%% Set Item Spacing
+\setlist[itemize]{align=parleft,left=0pt..1em}
+
+%%%% New Itemize "Zitemize" Formatting - tighter spacing than itemize
+\newenvironment{zitemize}{
+\begin{itemize}\itemsep0pt \parskip0pt \parsep1pt}
+{\end{itemize}\vspace{-0.5cm}}
+
+
+%%%% Define Skills Bold Formatting
+\newcommand{\hskills}[1]{
+\textbf{\bfseries #1} }
+
+%%%% Set Subsection formatting
+\titleformat{\subsection}{\vspace{-0.1cm} 
+\bfseries \fontsize{11pt}{2cm}}{}{0em}{}[\vspace{-0.1cm}]
+\titlespacing*{\section}{0pt}{7pt plus 1pt minus 1pt}{5pt plus 1pt minus 1pt}
+\titlespacing*{\subsection}{0pt}{5pt plus 1pt minus 1pt}{3pt plus 1pt minus 1pt}
+
+
+\begin{document}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  HEADER
+%%%%%%% --------------------------------------------------------------------------------------
+\begin{center}
+    \begin{minipage}[b]{0.24\textwidth}
+            \large +919539846630 \\
+            \large \href{mailto:mohameddanisap@gmail.com}{mohameddanisap@gmail.com} 
+    \end{minipage}% 
+    \begin{minipage}[b]{0.5\textwidth}
+            \centering
+            {\Huge MOHAMED DANIS. AP} \\ %
+            \vspace{0.1cm}
+            {\color{UI_blue} \Large{FULLSTACK DEVELOPER}} \\
+             \href{https://portfolio.mdanis.tech/}{\color{UI_blue} \textbf{view my portfolio}}
+    \end{minipage}% 
+    \begin{minipage}[b]{0.24\textwidth}
+            \flushright \large  %Willing to Relocate
+           \linkedin{\faLinkedin\ \href{https://www.linkedin.com/in/mohamed-danis/}{Linkedin}} \\
+            \github{\faGithub\ \href{https://github.com/MohamedDanis}{Github}}            
+    \end{minipage}   
+        
+\end{center}
+\section{Profile Summary}
+\begin{minipage}[b]{\textwidth}
+\normalsize  % Ensure uniform font size
+% \textbf{Software Engineer} with \textbf{2 years} of experience specializing in building scalable web applications. Proficient in modern stacks, including \textbf{Next.js}, \textbf{Tailwind CSS}, and \textbf{React.js}. Passionate about transforming complex technical challenges into simple, user-centric solutions. Dedicated to sharing knowledge and best practices to help other developers build smarter and more efficiently.
+\textbf{Fullstack Engineer} with \textbf{2 years of experience} specializing in building \textbf{scalable web applications}. Proficient in modern stacks, including \textbf{Next.js}, \textbf{React.js}, \textbf{TypeScript}, \textbf{JavaScript (ES6+)}, and \textbf{Tailwind CSS}. Experienced in developing \textbf{reusable components} and \textbf{API integration}, with a strong foundation in both \textbf{Frontend Architecture} and \textbf{Backend Technologies} with full \textbf{SDLC} practices from design to deployment. Passionate about transforming complex technical challenges into simple \textbf{user centric solutions}. Dedicated to sharing knowledge, best practices, and fostering \textbf{collaboration} to help other developers build smarter and more efficiently.
+
+\end{minipage}
+
+\section{Experience}
+
+\subsection*{FULL STACK DEVELOPER \hfill Nov 2023 --- Present} \subtext{Tefora Software Solutions \hfill Malappuram, Kerala} \begin{itemize}[itemsep=2.2pt, parsep=1pt]
+\item Engineered a scalable Progressive Web App (PWA) for a hospital indoor navigation using  \textbf{ReactJS}, and \textbf{TypeScript}, which reduced client costs by \textbf{70\%} and saved user time by \textbf{50\%} through robust offline capabilities.
+    \item Led a 2-member development team to build multiple comprehensive \textbf{React} based \textbf{SEO} friendly school website \textbf{CMS}, successfully delivering the entire solution from concept to completion within a \textbf{30-day} timeframe.
+    \item Managed \textbf{DevOps} and \textbf{CI/CD} initiatives, streamlining project deployment and leveraging expertise in \textbf{Next.js}, \textbf{Express.js}, and \textbf{TypeScript} to build scalable web applications.
+    \item Part of the research and development team to build \textbf{AI Saas} application for meeting agents.
+    \item Utilized \textbf{n8n}(Workflow Automation \& AI agents) internally to boost the processes with client onboarding, scrape email for lead generation and automated image generation etc.
+    \item Stepped into a complex \textbf{LMS} project mid-development, rapidly assessing the codebase and project requirements to ensure smooth progress
+    \item Demonstrated high-efficiency project delivery by developing and deploying single-page \textbf{React} sites from concept to completion in an average of \textbf{10 hours}. \end{itemize}
+    % \item Demonstrated high-efficiency project delivery by developing and deploying single-page \textbf{React} sites from concept to completion in an average of \textbf{10 hours} leveraging AI-assisted tool such as \textbf{GitHub Copilot}. \end{itemize}
+
+
+\section{Technical Skills}
+\begin{itemize}[itemsep=0.5pt, parsep=0.5pt]  % Made bullet points consistent
+    \item \textbf{Languages/Frameworks:} JavaScript (ES6+), TypeScript, ReactJS, Next.js, Node.js,Express.js, Nest.js, Redux,Zustand, Vercel AI
+    \item \textbf{Front-End:} TailwindCSS,Bootstrap,MUI,Shadcn/ui, HTML5, CSS3, jQuery,Motion,GSAP,SCSS,SEO,SSR,Responsive design,State Management
+    \item \textbf{DevOps\&Tools:} Git, GitHub, GitHub Actions, Docker (basics),
+    Containerization,DigitalOcean, AWS (EC2, S3), Vite, Webpack (familiarity), Postman, Jira, Swagger,Vercel
+    \item \textbf{Databases/ORM:} MongoDB,Postgresql,Mongoose,Drizzle ORM,Sequelize
+    \item \textbf{APIs:} RESTful APIs,GraphQL APIs,Server Actions
+    \item \textbf{Testing \& Practices:} Agile, Scrum, CI/CD, Vitest, Jest, Unit Testing
+    \item \textbf{AI \& Automation:} GitHub Copilot, n8n (workflow automation),Trae,Cursor,Zapier,OpenAI API, Gemini API
+     
+\end{itemize}
+
+\section{Education }
+\subsection*{B.Tech (CSE) {\normalsize \normalfont APJ Abdul Kalam Technological University, GPA: 7.3/10.00} \hfill Aug 2019 --- Jul 2023} 
+\vspace{0.1cm}
+\subsection*{Higher Secondary (Biology Science) {\normalsize \normalfont Kerala Board of Higher Secondary Education} \hfill 2017 Jun --- 2019 Mar} 
+\vspace{0.1cm}
+
+
+\section{Projects}
+\vspace{2.5pt}
+  % Reduced space before the first subsection
+\subsection{InterviewGenie $|$ \small{\href{https://interview-mvp-sooty.vercel.app/}{Live Link}}}
+\begin{itemize}[itemsep=1pt, parsep=1pt]  % Keep item spacing compact
+    \item Developed this project as part Top100 coders hackathon in 2023, it's a chatbot to practice mock interviews spanning from \textbf{200+ domains} using Gemini API
+    \item Deliver interview insights and feedbacks within \textbf{5 seconds} timeframe
+    \item \textbf{70\%} of software developers who tested had great result.
+    \item Utilized Next.JS, Vercel AI SDK,Better-Auth,Drizzle ORM, Clean UI using TailwindCSS and Shadcn/UI.
+    
+\end{itemize}
+
+\vspace{-8pt}  % Reduced space between subsections
+\subsection{Opnhub $|$ \small{\href{https://opnhub.vercel.app/}{Live Link}}}
+\begin{itemize}[itemsep=1pt, parsep=1pt]  % Keep item spacing compact
+    \item Build this personal project to help software developers to find opensource projects.
+    \item Utilized \textbf{NextJS}, RESTFul APIs from github to create a dead simple tool
+    \item Published in producthunt and gained \textbf{20+ upvotes}.
+    \item Released as opensource project and recieved contributions from \textbf{10+} developers from around the world
+\end{itemize}
+
+
+\section{Achievements}
+\vspace{-0.5pt}  % Reduced space before the first subsection
+\begin{itemize}[itemsep=1pt, parsep=1pt]  % Keep item spacing compact
+  \item Became finalist at \textbf{Top100 Coders} in Huddle Global 2023
+\end{itemize}
+
+
+%%%%%%% ---------------------------- END DOC HERE ---------------------------- %%%%%%% 
+\end{document}
+
+
+
+\documentclass[a4,10pt]{article}
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+ \usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{tabularx}
+\hypersetup{colorlinks=true,urlcolor=black}
+\usepackage[11pt]{moresize}
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage[inline]{enumitem}
+\usepackage{array}
+\usepackage{xcolor}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{anyfontsize}
+
+%%%% Set Margins
+\usepackage[margin=1cm, top=1cm]{geometry}
+
+%%%% Set Fonts
+\setmainfont[
+BoldFont=SourceSansPro-Semibold.otf, %SourceSansPro-Bold.otf
+ItalicFont=SourceSansPro-RegularIt.otf
+]{SourceSansPro-Regular.otf}
+\setsansfont{SourceSansPro-Semibold.otf}
+
+%%%% Set Page
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%%% Set URL Style
+\urlstyle{same}
+
+%%%% Set Indentation
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%%%% Set Secondary Color
+\definecolor{UI_blue}{RGB}{32, 64, 151}
+
+%%%% Define New Commands
+\usepackage[style=nature, maxbibnames=3]{biblatex}
+\addbibresource{Publications.bib}
+
+%%%% Bold Name in Publications
+\renewcommand*{\mkbibnamegiven}[1]{%
+\ifitemannotation{highlight}
+{\textbf{#1}}
+{#1}}
+
+\renewcommand*{\mkbibnamefamily}[1]{%
+\ifitemannotation{highlight}
+{\textbf{#1}}
+{#1}}
+
+%%%% Set Sections formatting
+\titleformat{\section}{
+\color{UI_blue} \scshape \raggedright \large 
+}{}{0em}{}[\vspace{-10pt} \hrulefill \vspace{-6pt}]
+
+%%%% Set Subtext Formatting
+\newcommand{\subtext}[1]{
+#1\par\vspace{-0.2cm}}
+
+% \newcommand{\subtextit}[1]{\vspace{0.15cm}
+% \textit{ #1 \vspace{-0.2cm}} }
+
+%%%% Set Item Spacing
+\setlist[itemize]{align=parleft,left=0pt..1em}
+
+%%%% New Itemize "Zitemize" Formatting - tighter spacing than itemize
+\newenvironment{zitemize}{
+\begin{itemize}\itemsep0pt \parskip0pt \parsep1pt}
+{\end{itemize}\vspace{-0.5cm}}
+
+
+%%%% Define Skills Bold Formatting
+\newcommand{\hskills}[1]{
+\textbf{\bfseries #1} }
+
+%%%% Set Subsection formatting
+\titleformat{\subsection}{\vspace{-0.1cm} 
+\bfseries \fontsize{11pt}{2cm}}{}{0em}{}[\vspace{-0.1cm}]
+\titlespacing*{\section}{0pt}{7pt plus 1pt minus 1pt}{5pt plus 1pt minus 1pt}
+\titlespacing*{\subsection}{0pt}{5pt plus 1pt minus 1pt}{3pt plus 1pt minus 1pt}
+
+
+\begin{document}
+
+%%%%%%% --------------------------------------------------------------------------------------
+%%%%%%%  HEADER
+%%%%%%% --------------------------------------------------------------------------------------
+\begin{center}
+    \begin{minipage}[b]{0.24\textwidth}
+            \large +919539846630 \\
+            \large \href{mailto:mohameddanisap@gmail.com}{mohameddanisap@gmail.com} 
+    \end{minipage}% 
+    \begin{minipage}[b]{0.5\textwidth}
+            \centering
+            {\Huge MOHAMED DANIS. AP} \\ %
+            \vspace{0.1cm}
+            {\color{UI_blue} \Large{FRONTEND DEVELOPER}} \\
+             \href{https://portfolio.mdanis.tech/}{\color{UI_blue} \textbf{view my portfolio}}
+    \end{minipage}% 
+    \begin{minipage}[b]{0.24\textwidth}
+            \flushright \large  %Willing to Relocate
+           \linkedin{\faLinkedin\ \href{https://www.linkedin.com/in/mohamed-danis/}{Linkedin}} \\
+            \github{\faGithub\ \href{https://github.com/MohamedDanis}{Github}}            
+    \end{minipage}   
+        
+\end{center}
+\section{Profile Summary}
+\begin{minipage}[b]{\textwidth}
+\normalsize  % Ensure uniform font size
+\textbf{Frontend Developer} with \textbf{2 years of experience} in designing and implementing responsive and intuitive user interfaces for web and mobile applications. Proficient in \textbf{React.js}, \textbf{TypeScript}, and \textbf{JavaScript (ES6+)}. Skilled in creating \textbf{custom React components}, leveraging \textbf{hooks} and \textbf{React lifecycle} methods to enhance performance and user experience. Strong background in \textbf{HTML}, \textbf{CSS}, and \textbf{Redux} to manage application state efficiently. Proven track record in refactoring code, debugging and testing to resolve software issues and improve system reliability. Experience in collaborating with \textbf{software engineers} to integrate \textbf{RESTful APIs} and working with \textbf{version control software}, ensuring seamless deployments. Based in 
+\textbf{Bangalore}, with a keen interest in contributing to cutting-edge software solutions.
+
+\end{minipage}
+
+\section{Experience}
+
+\subsection*{FULL STACK DEVELOPER \hfill Nov 2023 --- Present} \subtext{Tefora Software Solutions \hfill Malappuram, Kerala} \begin{itemize}[itemsep=2.2pt, parsep=1pt]
+\item Engineered a scalable Progressive Web App (PWA) for a hospital indoor navigation using  \textbf{ReactJS}, and \textbf{TypeScript}, which improved client operations by \textbf{70\%} and enhanced user efficiency by \textbf{50\%} through robust offline capabilities.
+    \item Led a team to deliver multiple comprehensive \textbf{React} based school websites, optimizing \textbf{front-end architecture} for SEO and fast performance.
+    \item Managed \textbf{DevOps} initiatives, focusing on \textbf{remote deployment tools} and integration of \textbf{APIs} to streamline development processes.
+    \item Successfully executed quick turnarounds by developing single-page \textbf{React} sites, reducing average deployment time to \textbf{10 hours}.
+\end{itemize}
+    % \item Demonstrated high-efficiency project delivery by developing and deploying single-page \textbf{React} sites from concept to completion in an average of \textbf{10 hours} leveraging AI-assisted tool such as \textbf{GitHub Copilot}. \end{itemize}
+\section{Technical Skills}
+\begin{itemize}[itemsep=0.5pt, parsep=0.5pt]  % Made bullet points consistent
+    \item \textbf{Languages/Frameworks:} JavaScript (ES6+), TypeScript, ReactJS, Next.js, Node.js, Express.js, \textbf{Redux}, \textbf{HTML}, \textbf{CSS}
+    \item \textbf{Front-End:} TailwindCSS, Bootstrap, MUI, \textbf{Responsive design}, State Management, \textbf{UI/UX Design}
+    \item \textbf{Tools:} \textbf{NPM}, Git, GitHub, Docker (basics), DigitalOcean, AWS (EC2, S3), Postman, Jira, \textbf{IDEs}
+    \item \textbf{APIs:} RESTful APIs, GraphQL
+    \item \textbf{Testing \\& Practices:} Agile, Scrum, \textbf{Refactoring}, \textbf{Debugging}, Unit Testing
+    \item \textbf{Version Control:} Git repositories, \textbf{version control software}
+\end{itemize}
+\section{Education }
+\subsection*{B.Tech (CSE) {\normalsize \normalfont APJ Abdul Kalam Technological University, GPA: 7.3/10.00} \hfill Aug 2019 --- Jul 2023} 
+\vspace{0.1cm}
+\subsection*{Higher Secondary (Biology Science) {\normalsize \normalfont Kerala Board of Higher Secondary Education} \hfill 2017 Jun --- 2019 Mar} 
+\vspace{0.1cm}
+
+\section{Projects}
+\vspace{2.5pt}
+  % Reduced space before the first subsection
+\subsection{InterviewGenie $|$ \small{\href{https://interview-mvp-sooty.vercel.app/}{Live Link}}}
+\begin{itemize}[itemsep=1pt, parsep=1pt]  % Keep item spacing compact
+    \item Developed this project as part of a hackathon, creating a chatbot for mock interviews across \textbf{200+ domains} using Gemini API.
+    \item Provides interview insights and feedback within \textbf{5 seconds}.
+    \item Enhancements led to \textbf{70\%} user satisfaction among software developers.
+    \item Technologies used include Next.JS, Vercel AI SDK, and TailwindCSS for a sleek UI.
+    
+\end{itemize}
+
+\vspace{-8pt}  % Reduced space between subsections
+\subsection{Opnhub $|$ \small{\href{https://opnhub.vercel.app/}{Live Link}}}
+\begin{itemize}[itemsep=1pt, parsep=1pt]  % Keep item spacing compact
+    \item Built this platform to assist developers in discovering \textbf{open-source projects}.
+    \item Utilized \textbf{NextJS} and RESTFul APIs, gaining community traction with \textbf{20+ upvotes} on Product Hunt.
+    \item Contributions from \textbf{10+ developers} globally helped enhance its functionality.
+\end{itemize}
+
+\section{Achievements}
+\vspace{-0.5pt}  % Reduced space before the first subsection
+\begin{itemize}[itemsep=1pt, parsep=1pt]  % Keep item spacing compact
+  \item Finalist at \textbf{Top100 Coders} in Huddle Global 2023
+\end{itemize}
+
+
+%%%%%%% ---------------------------- END DOC HERE ---------------------------- %%%%%%% 
+\end{document}
