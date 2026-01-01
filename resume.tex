@@ -1,5 +1,3 @@
-
-
 \documentclass[a4,10pt]{article}
 
 
@@ -10,6 +8,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{multicol}
 \usepackage{hyperref}
@@ -78,9 +77,6 @@ ItalicFont=SourceSansPro-RegularIt.otf
 \newcommand{\subtext}[1]{
 #1\par\vspace{-0.2cm}}
 
-% \newcommand{\subtextit}[1]{\vspace{0.15cm}
-% \textit{ #1 \vspace{-0.2cm}} }
-
 %%%% Set Item Spacing
 \setlist[itemize]{align=parleft,left=0pt..1em}
 
@@ -115,48 +111,45 @@ ItalicFont=SourceSansPro-RegularIt.otf
             \centering
             {\Huge MOHAMED DANIS. AP} \\ %
             \vspace{0.1cm}
-            {\color{UI_blue} \Large{FULLSTACK DEVELOPER}} \\
+            {\color{UI_blue} \Large{SOFTWARE DEVELOPMENT ENGINEER}} \\
              \href{https://portfolio.mdanis.tech/}{\color{UI_blue} \textbf{view my portfolio}}
     \end{minipage}% 
     \begin{minipage}[b]{0.24\textwidth}
-            \flushright \large  %Willing to Relocate
-           {\faLinkedin\ \href{https://www.linkedin.com/in/mohamed-danis/}{LinkedIn}} \\
-{\faGithub\ \href{https://github.com/MohamedDanis}{Github}}
+            \flushright \large  
+           \linkedin{\faLinkedin\ \href{https://www.linkedin.com/in/mohamed-danis/}{Linkedin}} \\
+            \github{\faGithub\ \href{https://github.com/MohamedDanis}{Github}}            
     \end{minipage}   
         
 \end{center}
 \section{Profile Summary}
 \begin{minipage}[b]{\textwidth}
-\normalsize  % Ensure uniform font size
-% \textbf{Software Engineer} with \textbf{2 years} of experience specializing in building scalable web applications. Proficient in modern stacks, including \textbf{Next.js}, \textbf{Tailwind CSS}, and \textbf{React.js}. Passionate about transforming complex technical challenges into simple, user-centric solutions. Dedicated to sharing knowledge and best practices to help other developers build smarter and more efficiently.
-\textbf{Fullstack Engineer} with \textbf{2 years of experience} specializing in building \textbf{scalable web applications}. Proficient in modern stacks, including \textbf{Next.js}, \textbf{Nest.js}, \textbf{TypeScript}, \textbf{JavaScript (ES6+)}, and \textbf{Python}. Experienced in developing \textbf{reusable components} and \textbf{API integration}, with a strong foundation in both \textbf{Frontend Architecture} and \textbf{Backend Technologies} with full \textbf{SDLC} practices from design to deployment. Passionate about transforming complex technical challenges into simple \textbf{user centric solutions}. Dedicated to sharing knowledge, best practices, and fostering \textbf{collaboration} to help other developers build smarter and more efficiently.
+\normalsize  
+\textbf{Software Development Engineer} with \textbf{3+ years of experience} in building innovative products and solutions from scratch. Proficient in programming with \textbf{Python, SQL,} and frameworks such as \textbf{Spark}, to design scalable, fault-tolerant systems. Experienced in \textbf{AWS technologies (EC2, S3, Redshift, EMR)}, ensuring high performance in the delivery of client-facing applications. A results-driven professional focused on customer-centric solutions and collaborating with cross-disciplinary teams to solve complex challenges.
 
 \end{minipage}
 
 \section{Experience}
 
-\subsection*{FULLSTACK DEVELOPER \hfill Nov 2023 --- Present} \subtext{Tefora Software Solutions \hfill Malappuram, Kerala} \begin{itemize}[itemsep=2.2pt, parsep=1pt]
-\item Engineered a scalable Progressive Web App (PWA) for a hospital indoor navigation using  \textbf{ReactJS}, and \textbf{TypeScript}, which reduced client costs by \textbf{70\%} and saved user time by \textbf{50\%} through robust offline capabilities.
-    \item Led a 2-member development team to build multiple comprehensive \textbf{React} based \textbf{SEO} friendly school website \textbf{CMS}, successfully delivering the entire solution from concept to completion within a \textbf{30-day} timeframe.
-    \item Managed \textbf{DevOps} and \textbf{CI/CD} initiatives, streamlining project deployment and leveraging expertise in \textbf{Next.js}, \textbf{Express.js}, and \textbf{TypeScript} to build scalable web applications.
-    \item Part of the research and development team to build \textbf{AI Saas} application for meeting agents.
-    \item Utilized \textbf{n8n}(Workflow Automation \& AI agents) internally to boost the processes with client onboarding, scrape email for lead generation and automated image generation etc.
-    \item Stepped into a complex \textbf{LMS} project mid-development, rapidly assessing the codebase and project requirements to ensure smooth progress
-    \item Demonstrated high-efficiency project delivery by developing and deploying single-page \textbf{React} sites from concept to completion in an average of \textbf{10 hours}. \end{itemize}
-    % \item Demonstrated high-efficiency project delivery by developing and deploying single-page \textbf{React} sites from concept to completion in an average of \textbf{10 hours} leveraging AI-assisted tool such as \textbf{GitHub Copilot}. \end{itemize}
-
+\subsection*{SOFTWARE DEVELOPMENT ENGINEER \hfill Nov 2023 --- Present} \subtext{Tefora Software Solutions \hfill Malappuram, Kerala} \begin{itemize}[itemsep=2.2pt, parsep=1pt]
+\item Designed and developed innovative software solutions that improved operational efficiency by \textbf{70\%}, using a combination of \textbf{AWS services} for deployment and management.
+    \item Represented the Application Operations / Development team in active projects to ensure alignment with customer needs.
+    \item Collaborated with cross-disciplinary teams to conceive and implement new products and features, ensuring alignment with customer requirements.
+    \item Participated in daily application operations / development stand-up meetings to foster communication and efficiency.
+    \item Built scalable data processing applications using \textbf{Kinesis} for real-time predictions, significantly enhancing decision-making capabilities.
+    \item Worked in an agile environment, contributing to the delivery of high-quality software within short development cycles.
+    \item Created and maintained application operations and development standard operating procedures for ongoing projects and processes.
+    \item Identified and troubleshot application issues related to API services, databases, and other backend systems, ensuring swift resolution or escalation.
+\end{itemize}
 
 \section{Technical Skills}
-\begin{itemize}[itemsep=0.5pt, parsep=0.5pt]  % Made bullet points consistent
-    \item \textbf{Languages/Frameworks:} JavaScript (ES6+), TypeScript, Python, ReactJS, Next.js, Node.js,Express.js, Nest.js,Redis,Redux,Zustand, Vercel AI
-    \item \textbf{Front-End:} TailwindCSS,Bootstrap,MUI,Shadcn/ui, HTML5, CSS3, jQuery,Motion,GSAP,SCSS,SEO,SSR,Responsive design,State Management
-    \item \textbf{DevOps\&Tools:} Git, GitHub, GitHub Actions, Docker (basics), Docker Compose,
-    Containerization,DigitalOcean, AWS (EC2, S3, SQS, Lambda), Vite, Webpack (familiarity), Postman, Jira, Swagger,Vercel
-    \item \textbf{Databases/ORM:} MongoDB,Postgresql,Mongoose,Drizzle ORM,Sequelize
-    \item \textbf{APIs:} RESTful APIs,GraphQL APIs,Server Actions
-    \item \textbf{Testing \& Practices:} Agile, Scrum, CI/CD, Vitest, Jest, Unit Testing
-    % \item \textbf{AI \& Automation:} GitHub Copilot, n8n (workflow automation),Trae,Cursor,Zapier,OpenAI API, Gemini API
-     
+\begin{itemize}[itemsep=0.5pt, parsep=0.5pt]  
+    \item \textbf{Languages/Frameworks:} Python, SQL, Scala
+    \item \textbf{Big Data Technologies:} Hadoop, Spark, Hive, EMR, Kinesis
+    \item \textbf{Cloud Technologies:} AWS (EC2, S3, Redshift, Glue, Lambda) 
+    \item \textbf{Data Management:} ETL Development, Data Modeling, Data Warehousing
+    \item \textbf{APIs:} RESTful APIs, GraphQL
+    \item \textbf{Tools:} Git, Docker, Jira, Postman, NPM
+    \item \textbf{Practices:} Agile, CI/CD, Data Governance, Compliance Standards
 \end{itemize}
 
 \section{Education }
@@ -165,64 +158,26 @@ ItalicFont=SourceSansPro-RegularIt.otf
 \subsection*{Higher Secondary (Biology Science) {\normalsize \normalfont Kerala Board of Higher Secondary Education} \hfill 2017 Jun --- 2019 Mar} 
 \vspace{0.1cm}
 
-
 \section{Projects}
 \vspace{2.5pt}
-  % Reduced space before the first subsection
-\subsection{InterviewGenie $|$ \small{\href{https://interview-mvp-sooty.vercel.app/}{Live Link}}}
-\begin{itemize}[itemsep=1pt, parsep=1pt]  % Keep item spacing compact
-    \item Developed this project as part Top100 coders hackathon in 2023, it's an AI Agent to practice mock interviews spanning from \textbf{200+ domains} using Gemini API LLM.
-    \item Deliver interview insights and feedbacks within \textbf{5 seconds} timeframe
-    \item \textbf{70\%} of software developers who tested had great result.
-    \item Utilized Next.JS, Vercel AI SDK,Better-Auth,Drizzle ORM, Clean UI using TailwindCSS and Shadcn/UI.
-    
+\subsection{Compliance Analytics Tool $|$ \small{\href{https://examplelink.com}{Live Link}}}
+\begin{itemize}[itemsep=1pt, parsep=1pt]  
+    \item Engineered a data analytics solution using AWS Redshift to facilitate compliance monitoring through fast and reliable querying.
+    \item Developed ETL frameworks with AWS Glue and Kinesis to process real-time data, supporting agile and informed decision-making.
+    \item Collaborated with teams to ensure adherence to compliance standards and effective risk management protocols.
 \end{itemize}
 
-\vspace{-8pt}  % Reduced space between subsections
-\subsection{Opnhub $|$ \small{\href{https://opnhub.vercel.app/}{Live Link}}}
-\begin{itemize}[itemsep=1pt, parsep=1pt]  % Keep item spacing compact
-    \item Build this personal project to help software developers to find opensource projects.
-    \item Utilized \textbf{NextJS}, RESTFul APIs from github to create a dead simple tool
-    \item Published in producthunt and gained \textbf{20+ upvotes}.
-    \item Released as opensource project and recieved contributions from \textbf{10+} developers from around the world
+\vspace{-8pt}  
+\subsection{Data Stream Processing System $|$ \small{\href{https://examplelink.com}{Live Link}}}
+\begin{itemize}[itemsep=1pt, parsep=1pt]  
+    \item Developed a scalable data streaming application using Apache Kafka and Spark, enabling real-time insights for customers.
+    \item Implemented monitoring and alerting to ensure responsiveness and optimization of system performance.
 \end{itemize}
-
-
-
-% \section{Certifications}
-% \vspace{-0.5pt}
-% \begin{minipage}{0.33\textwidth}
-%     \begin{itemize}[itemsep=1pt, parsep=1pt]
-%         \item \href{https://drive.google.com/file/d/1saSkIwZ0fV33i9SG2Ff1VVk1bZ2e-u-n/view?usp=sharing}{\textbf{Guidehouse GEM Award}}
-%     \end{itemize}
-% \end{minipage}%
-% \begin{minipage}{0.33\textwidth}
-%     \begin{itemize}[itemsep=1pt, parsep=1pt]
-%         \item \href{https://learn.microsoft.com/en-us/users/misbaha-6785/credentials/79d6cf6e37729f3c?ref=https%3A%2F%2Fwww.linkedin.com%2F}{\textbf{Microsoft Azure Fundamentals (AZ-900)}}
-%     \end{itemize}
-% \end{minipage}%
-% \begin{minipage}{0.33\textwidth}
-%    \begin{itemize}[itemsep=1pt, parsep=1pt]
-%         \item \href{https://www.credly.com/badges/2d1a7771-81f6-41d4-8770-e04d485225fd/linked_in_profile}{\textbf{GitHub Foundations}}
-%     \end{itemize}
-% \end{minipage}
-
-
-% \vspace{2pt}  % Adjust space between rows if needed
-
-% \begin{minipage}{0.33\textwidth}
-%      \begin{itemize}[itemsep=1pt, parsep=1pt]
-%         \item \href{https://www.credly.com/badges/9ac2bf84-8de7-4fcc-b566-da3524b40a72/linked_in_profile}{\textbf{Microsoft Azure Data Fundamentals}}
-%     \end{itemize}
-% \end{minipage}%
-% \hfill  % Adjusts alignment
-
-
 
 \section{Achievements}
-\vspace{-0.5pt}  % Reduced space before the first subsection
-\begin{itemize}[itemsep=1pt, parsep=1pt]  % Keep item spacing compact
-  \item Became finalist at \textbf{Top100 Coders} in Huddle Global 2023
+\vspace{-0.5pt}  
+\begin{itemize}[itemsep=1pt, parsep=1pt]  
+  \item Recognized as a key contributor in developing innovative solutions that significantly impacted overall project success and customer satisfaction.
 \end{itemize}
 
 
